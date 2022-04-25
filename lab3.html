@@ -1,34 +1,18 @@
 <html>
-
-<head><title>Lab 3 Example</title></head>
-<body>
-
-Lab 3 Tweets
-
-<script>
-
-function getTweets() {
-        fetch ('http://ec2-18-209-247-77.compute-1.amazonaws.com:3000/feed/random?q=weather').then(function (response) {
-            return response.json();
-        }).then(function(data) {
-
-            /*for (let i =0; Object.keys(data.statuses).length; i++) {
-                console.log(data.statuses[i].text, data.statuses[i].id, data.statuses[i].created_at);
-            }*/
-            console.log(data);
-        }).catch(function(err) {
-            console.warn("Something when wrong!!!", err);
-        });
-}
-
-window.onload = function () {
-    setInterval(getTweets, 5000);
-}
-
-</script>
-
-
-</body>
-
-
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Lab 3 Example</title>
+    </head>
+    <body>
+        <script src="main.js"></script> 
+        Lab 3 Tweets
+        <div>
+            Pause: <input type="checkbox" id="myCheck"/> 
+            <button onclick="check()">Check Checkbox</button>
+            <button onclick="uncheck()">Uncheck Checkbox</button>
+        </div>
+        <div id="tweet-container">
+            <!-- filled with Tweets -->
+        </div>
+    </body>
 </html>
