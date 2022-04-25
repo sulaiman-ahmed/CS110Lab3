@@ -1,0 +1,336 @@
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    background-color: #e6ecf0;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    height: 46px;
+  }
+  
+  .navbar {
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-left {
+    width: 50%;
+  }
+  
+  a.nav-link {
+    border-bottom: 2px solid white;
+  }
+  
+  a.nav-link:hover {
+    color: #4AB3F4;
+    border-bottom: 2px solid #4AB3F4 ;
+  }
+  
+  .logo{
+    width: 24px;
+  } 
+  
+  button {
+    border-radius: 30px;  
+    padding: 2px 15px;
+    color: #4AB3F4;
+    border: 1px solid #4AB3F4;
+    max-width: 100px;
+    background-color: white;
+  }
+  
+  .tweet-button {
+    background-color: #4AB3F4;
+    color: white;
+    font-weight: bold;
+    right: 0;
+  }
+  
+  .wrapper {
+    max-width: 1190px;
+    margin: 56px auto;
+    padding: 10px;
+  }
+  
+  .left-content {
+    min-width: 290px;
+    margin: 5px 5px;
+    height: 240px;
+  }
+  
+  .banner {
+    width: 100%;
+    background: black;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-img {
+    width: 200px; 
+   
+  }
+  
+  .profile {
+    z-index: 5;
+    margin-top: -30px;
+    max-width: 80px;
+  }
+  
+  .profile-pic {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .profile-info {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 2px 1px;
+  }
+  
+  .profile-name {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .statistics {
+    margin-top: 5px;
+  }
+  
+  .statistics-pair {
+    margin-left: 20px;
+  }
+  
+  .statistics-title {
+    font-weight: bold;
+    color: gray;
+  }
+  
+  .statistics-number {
+    font-weight: bold;
+    color:#4AB3F4
+  }
+  
+  .center-content {
+    min-width: 580px;
+    background-color: white;
+    margin: 5px 5px;
+    height: 550px;
+  }
+  
+  .right-content {
+    min-width: 390px;
+    background-color: white;
+    margin: 5px 5px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .right-content {
+      display: none;
+    }
+  }
+  
+  .right-header {
+    font-weight: 780;
+    font-size: 25px;
+    margin: 15px;
+  }
+  
+  .profile-pic-smaller {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .profile-pic-smaller-mid {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .name {
+    font-weight: 900;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+  }
+  
+  .username {
+    position: relative;
+    bottom: 20px;
+    color: grey;
+    right: 10px;
+  }
+  
+  .follow-button {
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    bottom: 35px;
+    margin-left: 120px;
+    right: 10px;
+    width: 100px;
+  }
+  
+  .separation-line {
+    color:gainsboro;
+    position: relative;
+    bottom: 30px;
+    border-top: 2.1px solid;
+    width: 90%;
+    margin-left: 20px;
+  }
+  
+  .separation-line2 {
+    color:gainsboro;
+    position: relative;
+    bottom: 50px;
+    border-top: 2.1px solid;
+    width: 90%;
+    margin-left: 20px;
+  }
+  
+  .second-suggestion {
+    position: relative;
+    bottom: 30px
+  }
+  
+  .tweet1 {
+    position: relative;
+    bottom: 50px;
+    left: 110px;
+  }
+  
+  .tweet1-1 {
+    position: relative;
+    bottom: 70px;
+    left: 110px;
+  }
+  
+  .tweet-separation {
+    color:#e6ecf0;
+    position: relative;
+    bottom: 65px;
+    border-top: 1.5px solid;
+  }
+  
+  .profile-pic-smaller-mid2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    bottom: 70px;
+  }
+  
+  .name2 {
+    font-weight: 900;
+    position: relative;
+    bottom: 95px;
+    right: 10px;
+  }
+  
+  .username2 {
+    position: relative;
+    bottom: 95px;
+    color: grey;
+    right: 10px;
+  }
+  
+  .tweet2 {
+    position: relative;
+    bottom: 115px;
+    left: 110px;
+  }
+  
+  .tweet2-1 {
+    position: relative;
+    bottom: 135px;
+    left: 110px;
+  }
+  
+  .tweet2-2 {
+    position: relative;
+    bottom: 155px;
+    left: 110px;
+  }
+  
+  .tweet-separation2 {
+    color:#e6ecf0;
+    position: relative;
+    bottom: 150px;
+    border-top: 1.5px solid;
+  }
+  
+  .profile-pic-smaller-mid3 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    bottom: 155px;
+  }
+  
+  .name3 {
+    font-weight: 900;
+    position: relative;
+    bottom: 178px;
+    right: 10px;
+  }
+  
+  .username3 {
+    position: relative;
+    bottom: 178px;
+    color: grey;
+    right: 10px;
+  }
+  
+  .tweet3 {
+    position: relative;
+    bottom: 200px;
+    left: 110px;
+  }
+  
+  .tweet-separation3 {
+    color:#e6ecf0;
+    position: relative;
+    bottom: 180px;
+    border-top: 1.5px solid;
+  }
+  
+  .tweet4 {
+    position: relative;
+    bottom: 25px;
+  }
+  
+  .tweet5 {
+    position: relative;
+    bottom: 50px;
+  }

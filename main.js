@@ -1,5 +1,5 @@
 //web server url
-const url = "ec2-18-209-247-77.compute-1.amazonaws.com:3000/feed/random?q=weather";
+const url = "http://ec2-18-209-247-77.compute-1.amazonaws.com:3000/feed/random?q=weather";
 let id_arr = []; //used to store tweet ID's so we don't have dupes
 let master_arr = []; //all tweets that are displayed, and will be ordered/sorted
 
@@ -8,13 +8,14 @@ function getTweets() {
         return res.json();
     }).then(function(data){
         if (!document.getElementById("myCheck").checked){ //Only goes through Tweets when the pause button is UNCHECKED 
-            for (let i =0; Object.keys(data.statuses).length; i++) {
+            for (let i =0; i < Object.keys(data.statuses).length; i++) {
                 if (id_arr.includes(data.statuses[i].id)){ //means the Tweet already exists
                     //do nothing, do not add the Tweet to the list
                     console.log("Tweet already exists!");
                 } else { //means that the Tweet does not already exist, add the Tweet to the lists
+                    console.log(data.statuses[i].id)
                     id_arr.push(data.statuses[i].id);
-                    master_arr.push(data.statuses[i].id);
+                    master_arr.push(data.statuses[i]);
                 }
                 //console.log(data.statuses[i].text, data.statuses[i].id, data.statuses[i].created_at);
             }

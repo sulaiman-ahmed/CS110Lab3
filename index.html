@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lab 3</title>
+  </head>
+  <body>
+    <script src="main.js"></script> 
+    <header>
+      <nav class="navbar navbar-expand navbar-light bg-light d-flex justify-content-between" role="navigation">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse nav-left" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Moments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Messages</a>
+              </li>
+            </ul>
+            <a class="navbar-brand"><img src="images/twitter-logo.png" alt="Twitter Logo" class="logo"></a>
+            <button class="tweet-button align-end">Tweet</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <div class="wrapper d-flex justify-content-center">
+
+      <div class="left-content d-flex flex-column bg-light">
+        <div class="banner">
+          <img src="images/ratatouille-banner.png" class="banner-img" alt="ratatouille-banner"/>
+        </div> 
+        <div class="profile d-flex">
+          <img src="images/ratatouille.jpg" class="profile-pic"/>
+          <div class="profile-info d-flex flex-column">
+            <div class="profile-name">Remy</div>
+            <div class="text-secondary">@remy</div>
+          </div>
+        </div>
+        <div class="statistics d-flex">
+          <div class="statistics-pair">
+            <p class="statistics-title">Tweets</p>
+            <p class="statistics-number">5049</p>
+          </div>
+          <div class="statistics-pair">
+            <p class="statistics-title">Following</p>
+            <p class="statistics-number">324</p>
+          </div>
+          <div class="statistics-pair">
+            <p class="statistics-title">Followers</p>
+            <p class="statistics-number">809</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="center-content">
+        <img src="images/ratatouille.jpg" class="profile-pic-smaller-mid"> </img>
+        <span class="name">Remy </span><span class="username">@remy Nov 19</span>
+        <p class="tweet1">I'm taking this class called CS <b>110</b> and the TAs are all so</p>
+        <p class="tweet1-1"><b>cool</b>!</p>
+        <hr class="tweet-separation"> </hr>
+        <img src="images/ratatouille.jpg" class="profile-pic-smaller-mid2"> </img>
+        <span class="name2">Remy </span><span class="username2">@remy Nov 19</span>
+        <p class="tweet2">It's 2007. You just got home from elementary school. Your</p>
+        <p class="tweet2-1">mom has pizza bagels in the oven. Ratatouille is in theaters.</p>
+        <p class="tweet2-2">Life is good </p>
+        <hr class="tweet-separation2"> </hr>
+        <img src="images/ratatouille.jpg" class="profile-pic-smaller-mid3"> </img>
+        <span class="name3">Remy </span><span class="username3">@remy Nov 19</span>
+        <p class="tweet3">Let's make some pasta!</p>
+        <hr class="tweet-separation3"> </hr>
+        <span class="tweet4">
+          <img src="images/ratatouille.jpg" class="profile-pic-smaller-mid3"> </img>
+          <span class="name3">Remy </span><span class="username3">@remy Nov 19</span>
+          <p class="tweet3">Let's make some pasta!</p>
+          <hr class="tweet-separation3"> </hr>
+        </span>
+        <span class="tweet5">
+          <img src="images/ratatouille.jpg" class="profile-pic-smaller-mid3"> </img>
+          <span class="name3">Remy </span><span class="username3">@remy Nov 19</span>
+          <p class="tweet3">Let's make some pasta!</p>
+          <hr class="tweet-separation3"> </hr>
+        </span>
+      </div>
+      <div class="right-content">
+        <p class="right-header">Who to follow </p>
+        <div class="first-suggestion">
+          <img src="images/linguini.png" class="profile-pic-smaller"></img>
+          <span class="name">Linguini</span> <span class="username">@linguini</span>
+          <button class="follow-button">Follow</button> 
+        </div>
+        <hr class="separation-line"> </hr>
+        <div class="second-suggestion">
+          <img src="images/ratatouille.jpg" class="profile-pic-smaller"></img>
+          <span class="name">CS 110 TA </span><span class="username">@cs</span>
+          <button class="follow-button">Follow</button>
+        </div>
+        <hr class="separation-line2"> </hr>
+      </div>
+    </div>
+
+    <div>
+        Pause: <input type="checkbox" id="myCheck"/> 
+        <button onclick="check()">Check Checkbox</button>
+        <button onclick="uncheck()">Uncheck Checkbox</button>
+    </div>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
