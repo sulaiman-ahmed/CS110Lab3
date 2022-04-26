@@ -18,7 +18,33 @@ $(document).ready(function() {
 
 });
 
-//for tweets
+function searchTweets() {
+    pause = true;
+    var input = document.getElementById('searchBar')
+    var filter = input.value.toLowerCase();
+    var tweets = document.getElementsByClassName('tweetBlock')
+
+    for(const tweet of tweets){
+        var a = tweet.getElementsByClassName('tweetText')[0];
+        var txtValue = a.textContent || a.innerText;
+        if(txtValue.toLowerCase().indexOf(filter) > -1) {
+            tweet.style.display = "";
+        } else {
+            tweet.style.display = "none";
+        }
+    }
+}
+
+function clearSearch() {
+    pause = false;
+    var search = document.getElementById('searchBar')
+    var tweets = document.getElementsByClassName('tweetBlock')
+    search.value = '';
+    search.ariaPlaceholder = 'Search in tweets...';
+    for(var tweet of tweets) {
+        tweet.style.display = "";
+    }
+}
 
 function URLError(url){
     var http = new XMLHttpRequest();
@@ -31,15 +57,7 @@ var tweetContainer = document.getElementById('contentCenter');
 var tweetID = []
 var tweetArr = []
 
-/*
- * Removes all existing tweets from tweetList and then append all tweets back in
- *
- * @param {Array<Object>} tweets - A list of tweets
- * @returns None, the tweets will be renewed
- */
-
-
- function refreshTweets(tweets) {
+function refreshTweets(tweets) {
     let tweetStatus = tweets.statuses;
 
     if(tweetContainer.firstChild) {
@@ -86,6 +104,7 @@ var tweetArr = []
             tweetContent.append(tweetUserInfo);
 
             var tweetText = document.createElement("p");
+            tweetText.className = "tweetText";
             tweetText.appendChild(document.createTextNode(tweet.text));
 
             tweetContent.append(tweetText);
@@ -93,6 +112,8 @@ var tweetArr = []
             tweetBlock.append(tweetFlex);
             
             tweetArr.push(tweetBlock);
+        } else {
+            console.log("Tweet Duplicate found");
         }
 
         for(var i = tweetArr.length - 1; i >= 0; i--) {
@@ -100,4 +121,4 @@ var tweetArr = []
         }
 
     });
- }
+}
