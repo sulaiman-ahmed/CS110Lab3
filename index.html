@@ -3,10 +3,12 @@
   <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Lab 3</title>
   </head>
   <body>
-    <script src="main.js"></script> 
     <header>
       <nav class="navbar navbar-expand navbar-light bg-light d-flex justify-content-between" role="navigation">
         <div class="container-fluid">
@@ -26,6 +28,7 @@
               </li>
             </ul>
             <a class="navbar-brand"><img src="images/twitter-logo.png" alt="Twitter Logo" class="logo"></a>
+            <button id = "pause-button" class="align-end" onclick="pause=!pause">Pause</button>
             <button class="tweet-button align-end">Tweet</button>
           </div>
         </div>
@@ -64,7 +67,7 @@
       </div>
 
       <div id="contentCenter" class="bg-light" role="main">
-        <div class="tweetBlock">
+        <!-- <div class="tweetBlock">
           <div class="d-flex">
             <img src="images/ratatouille.jpg" alt="Avatar" class="avatar">
             <div class="nextToAvatar d-flex flex-column">
@@ -124,7 +127,7 @@
               <p>Lets make some pasta!</p>
             </div>
           </div>
-        </div>
+        </div> -->
         
       </div>
 
@@ -144,13 +147,8 @@
         <hr class="separation-line2"> </hr>
       </div>
     </div>
-
-    <div>
-        Pause: <input type="checkbox" id="myCheck"/> 
-        <button onclick="check()">Check Checkbox</button>
-        <button onclick="uncheck()">Uncheck Checkbox</button>
-    </div>
     
   </body>
+  <script src="main.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

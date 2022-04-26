@@ -38,6 +38,7 @@ body {
   
   .logo{
     width: 24px;
+    margin-right: 600px;
   } 
   
   button {
@@ -47,6 +48,10 @@ body {
     border: 1px solid #4AB3F4;
     max-width: 100px;
     background-color: white;
+  }
+
+  #pause-button {
+      margin:0px 10px;
   }
   
   .tweet-button {
@@ -241,119 +246,4 @@ body {
     bottom: 30px
   }
   
-  .tweet1 {
-    position: relative;
-    bottom: 50px;
-    left: 110px;
-  }
   
-  .tweet1-1 {
-    position: relative;
-    bottom: 70px;
-    left: 110px;
-  }
-  
-  .tweet-separation {
-    color:#e6ecf0;
-    position: relative;
-    bottom: 65px;
-    border-top: 1.5px solid;
-  }
-  
-  .profile-pic-smaller-mid2 {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin-left: 20px;
-    margin-right: 20px;
-    position: relative;
-    bottom: 70px;
-  }
-  
-  .name2 {
-    font-weight: 900;
-    position: relative;
-    bottom: 95px;
-    right: 10px;
-  }
-  
-  .username2 {
-    position: relative;
-    bottom: 95px;
-    color: grey;
-    right: 10px;
-  }
-  
-  .tweet2 {
-    position: relative;
-    bottom: 115px;
-    left: 110px;
-  }
-  
-  .tweet2-1 {
-    position: relative;
-    bottom: 135px;
-    left: 110px;
-  }
-  
-  .tweet2-2 {
-    position: relative;
-    bottom: 155px;
-    left: 110px;
-  }
-  
-  .tweet-separation2 {
-    color:#e6ecf0;
-    position: relative;
-    bottom: 150px;
-    border-top: 1.5px solid;
-  }
-  
-  .profile-pic-smaller-mid3 {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin-left: 20px;
-    margin-right: 20px;
-    position: relative;
-    bottom: 155px;
-  }
-  
-  .name3 {
-    font-weight: 900;
-    position: relative;
-    bottom: 178px;
-    right: 10px;
-  }
-  
-  .username3 {
-    position: relative;
-    bottom: 178px;
-    color: grey;
-    right: 10px;
-  }
-  
-  .tweet3 {
-    position: relative;
-    bottom: 200px;
-    left: 110px;
-  }
-  
-  .tweet-separation3 {
-    color:#e6ecf0;
-    position: relative;
-    bottom: 180px;
-    border-top: 1.5px solid;
-  }
-  
-  .tweet4 {
-    position: relative;
-    bottom: 25px;
-  }
-  
-  .tweet5 {
-    position: relative;
-    bottom: 50px;
-  }
